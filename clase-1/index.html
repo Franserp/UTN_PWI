@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Survey form example</h1>
+        <p id="description"> This is an example of a survey page </p>
+      </header>
+      <form class="form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+          </div>
+          <div class="form-group">
+            <label id="age-label" for="age">Age</label>
+            <input type="number" name="age" id="age" class="form-control" placeholder="Age" min="0" max="90">
+          </div>
+          <div class="form-group">
+            <p>Gender</p>
+            <select id="dropdown" name="gender" class="form-control" required>
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="other">other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>Wich color do you prefer</p>
+            <label>
+                <input type="radio" name="colors" class="input-radio">
+                Red
+            </label>
+            <label>
+                <input type="radio" name="colors" class="input-radio">
+                Blue
+            </label>
+          </div>
+          <div class="form-group">
+            <p>What food do you like?</p>
+            <label>
+                <input value="Pizza" type="checkbox" name="food" class="input-checkbox">
+                Pizza
+            </label>
+            <label>
+                <input value="Hamburguer" type="checkbox" name="food" class="input-checkbox">
+                Hamburguer
+            </label>
+            <label>
+                <input value="Fish-chips" type="checkbox" name="food" class="input-checkbox">
+                Fish and Chips
+            </label>
+          </div>
+          <div class="form-group">
+            <p>Any coments or suggestion</p>
+            <textarea id="coments" class="input-textarea" name="coments" placeholder="Enter your coments or suggestion"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">submit</button>
+          </div>
+
+      </form>
+        
+    </div>
+    
+</body>
+</html>
